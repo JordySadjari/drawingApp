@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing app</title>
+    <style>
+        #canvas{
+            border:solid black 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="canvasDiv"></div>
+
+    <input type="button" onclick="changeColor('#000000')" value="Black">
+    <input type="button" onclick="changeColor('#ff0000')" value="Red">
+    <input type="button" onclick="changeColor('#00ff00')" value="Green">
+    <input type="button" onclick="changeColor('#0000ff')" value="Blue">
+    <input type="button" onclick="changeColor('#ffffff')" value="Eraser">
+    <input type="button" onclick="clearCanvas()" value="clear">
+    <input type="button" onclick="changeSize('5')" value="small">
+    <input type="button" onclick="changeSize('20')" value="normal">
+    <input type="button" onclick="changeSize('40')" value="large">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
